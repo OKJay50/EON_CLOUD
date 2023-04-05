@@ -1,0 +1,25 @@
+{
+  "version": 1,
+  "canisters": {
+    "EON_CLOUD_backend": {
+      "type": "motoko",
+      "main": "src/EON_CLOUD_backend/main.mo"
+    },
+    "EON_CLOUD_frontend": {
+      "type": "assets",
+      "source": [
+        "src/EON_CLOUD_frontend/assets"
+      ],
+      "dependencies": [
+        "EON_CLOUD_backend"
+      ]
+    }
+  },
+  "defaults": {
+    "build": {
+      "packtool": "",
+      "args": ""
+    }
+  },
+  "output_env_file": ".env"
+}
